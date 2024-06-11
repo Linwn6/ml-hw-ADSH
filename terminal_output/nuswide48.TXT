@@ -1,0 +1,253 @@
+(nerf) root@autodl-container-ca0e419d45-12ac5360:~/DeepHash-pytorch-master# python ADSH.py
+train_set 10500
+test 2100
+database 193734
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:18<00:00, 21.79it/s]
+[ADSH][ 1/150][12:22:24] bit:48, dataset:nuswide_21,  train loss:28852.310
+[ADSH][ 2/150][12:22:33] bit:48, dataset:nuswide_21,  train loss:17040.549
+[ADSH][ 3/150][12:22:41] bit:48, dataset:nuswide_21,  train loss:14346.852
+[ADSH][ 4/150][12:22:50] bit:48, dataset:nuswide_21,  train loss:13753.434
+[ADSH][ 5/150][12:22:59] bit:48, dataset:nuswide_21,  train loss:13239.112
+[ADSH][ 6/150][12:23:08] bit:48, dataset:nuswide_21,  train loss:13771.706
+[ADSH][ 7/150][12:23:17] bit:48, dataset:nuswide_21,  train loss:13055.307
+[ADSH][ 8/150][12:23:25] bit:48, dataset:nuswide_21,  train loss:13127.950
+[ADSH][ 9/150][12:23:33] bit:48, dataset:nuswide_21,  train loss:12567.973
+[ADSH][10/150][12:23:42] bit:48, dataset:nuswide_21,  train loss:12895.957
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.61it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:16<00:00, 22.23it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 66.32it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+save in  save/ADSH/nuswide_21_48bits_0.7665339909383155
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7665339909383155 Best MAP: 0.7665339909383155
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][11/150][12:26:46] bit:48, dataset:nuswide_21,  train loss:12456.177
+[ADSH][12/150][12:26:55] bit:48, dataset:nuswide_21,  train loss:13160.627
+[ADSH][13/150][12:27:03] bit:48, dataset:nuswide_21,  train loss:12470.887
+[ADSH][14/150][12:27:12] bit:48, dataset:nuswide_21,  train loss:12649.447
+[ADSH][15/150][12:27:21] bit:48, dataset:nuswide_21,  train loss:12402.027
+[ADSH][16/150][12:27:30] bit:48, dataset:nuswide_21,  train loss:12685.649
+[ADSH][17/150][12:27:39] bit:48, dataset:nuswide_21,  train loss:12417.641
+[ADSH][18/150][12:27:47] bit:48, dataset:nuswide_21,  train loss:12800.656
+[ADSH][19/150][12:27:56] bit:48, dataset:nuswide_21,  train loss:13056.602
+[ADSH][20/150][12:28:05] bit:48, dataset:nuswide_21,  train loss:13125.147
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.05it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:08<00:00, 23.49it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 67.44it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+save in  save/ADSH/nuswide_21_48bits_0.7775362243661803
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7775362243661803 Best MAP: 0.7775362243661803
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][21/150][12:31:02] bit:48, dataset:nuswide_21,  train loss:12503.175
+[ADSH][22/150][12:31:11] bit:48, dataset:nuswide_21,  train loss:13091.770
+[ADSH][23/150][12:31:20] bit:48, dataset:nuswide_21,  train loss:12604.086
+[ADSH][24/150][12:31:28] bit:48, dataset:nuswide_21,  train loss:12406.646
+[ADSH][25/150][12:31:37] bit:48, dataset:nuswide_21,  train loss:12161.868
+[ADSH][26/150][12:31:46] bit:48, dataset:nuswide_21,  train loss:12433.079
+[ADSH][27/150][12:31:54] bit:48, dataset:nuswide_21,  train loss:12567.580
+[ADSH][28/150][12:32:03] bit:48, dataset:nuswide_21,  train loss:12642.838
+[ADSH][29/150][12:32:11] bit:48, dataset:nuswide_21,  train loss:11861.613
+[ADSH][30/150][12:32:20] bit:48, dataset:nuswide_21,  train loss:11919.401
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.68it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:08<00:00, 23.48it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 66.37it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+save in  save/ADSH/nuswide_21_48bits_0.7873780436557691
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7873780436557691 Best MAP: 0.7873780436557691
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][31/150][12:35:17] bit:48, dataset:nuswide_21,  train loss:12250.365
+[ADSH][32/150][12:35:26] bit:48, dataset:nuswide_21,  train loss:12399.034
+[ADSH][33/150][12:35:35] bit:48, dataset:nuswide_21,  train loss:12872.209
+[ADSH][34/150][12:35:44] bit:48, dataset:nuswide_21,  train loss:12634.443
+[ADSH][35/150][12:35:52] bit:48, dataset:nuswide_21,  train loss:12205.552
+[ADSH][36/150][12:36:01] bit:48, dataset:nuswide_21,  train loss:12867.328
+[ADSH][37/150][12:36:09] bit:48, dataset:nuswide_21,  train loss:12793.298
+[ADSH][38/150][12:36:18] bit:48, dataset:nuswide_21,  train loss:12838.242
+[ADSH][39/150][12:36:27] bit:48, dataset:nuswide_21,  train loss:12212.636
+[ADSH][40/150][12:36:36] bit:48, dataset:nuswide_21,  train loss:12645.629
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 12.59it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:09<00:00, 23.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 67.10it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+save in  save/ADSH/nuswide_21_48bits_0.7898143673533706
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7898143673533706 Best MAP: 0.7898143673533706
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][41/150][12:39:33] bit:48, dataset:nuswide_21,  train loss:12423.848
+[ADSH][42/150][12:39:42] bit:48, dataset:nuswide_21,  train loss:12456.054
+[ADSH][43/150][12:39:51] bit:48, dataset:nuswide_21,  train loss:12349.814
+[ADSH][44/150][12:40:00] bit:48, dataset:nuswide_21,  train loss:12391.353
+[ADSH][45/150][12:40:09] bit:48, dataset:nuswide_21,  train loss:12786.288
+[ADSH][46/150][12:40:17] bit:48, dataset:nuswide_21,  train loss:12805.822
+[ADSH][47/150][12:40:26] bit:48, dataset:nuswide_21,  train loss:12334.691
+[ADSH][48/150][12:40:35] bit:48, dataset:nuswide_21,  train loss:12351.257
+[ADSH][49/150][12:40:44] bit:48, dataset:nuswide_21,  train loss:12837.404
+[ADSH][50/150][12:40:53] bit:48, dataset:nuswide_21,  train loss:12551.463
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.02it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:10<00:00, 23.21it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 67.37it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7838919716835454 Best MAP: 0.7898143673533706
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][51/150][12:43:51] bit:48, dataset:nuswide_21,  train loss:12740.503
+[ADSH][52/150][12:43:59] bit:48, dataset:nuswide_21,  train loss:12615.213
+[ADSH][53/150][12:44:08] bit:48, dataset:nuswide_21,  train loss:12672.803
+[ADSH][54/150][12:44:17] bit:48, dataset:nuswide_21,  train loss:12175.300
+[ADSH][55/150][12:44:26] bit:48, dataset:nuswide_21,  train loss:12140.781
+[ADSH][56/150][12:44:35] bit:48, dataset:nuswide_21,  train loss:12418.286
+[ADSH][57/150][12:44:44] bit:48, dataset:nuswide_21,  train loss:12454.997
+[ADSH][58/150][12:44:52] bit:48, dataset:nuswide_21,  train loss:11938.973
+[ADSH][59/150][12:45:01] bit:48, dataset:nuswide_21,  train loss:11970.346
+[ADSH][60/150][12:45:10] bit:48, dataset:nuswide_21,  train loss:12361.197
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.91it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:08<00:00, 23.54it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 66.99it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7896702190088929 Best MAP: 0.7898143673533706
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][61/150][12:48:06] bit:48, dataset:nuswide_21,  train loss:13056.194
+[ADSH][62/150][12:48:14] bit:48, dataset:nuswide_21,  train loss:11821.373
+[ADSH][63/150][12:48:23] bit:48, dataset:nuswide_21,  train loss:12129.998
+[ADSH][64/150][12:48:32] bit:48, dataset:nuswide_21,  train loss:12613.340
+[ADSH][65/150][12:48:41] bit:48, dataset:nuswide_21,  train loss:12462.630
+[ADSH][66/150][12:48:50] bit:48, dataset:nuswide_21,  train loss:12411.865
+[ADSH][67/150][12:48:59] bit:48, dataset:nuswide_21,  train loss:12279.719
+[ADSH][68/150][12:49:08] bit:48, dataset:nuswide_21,  train loss:12790.167
+[ADSH][69/150][12:49:17] bit:48, dataset:nuswide_21,  train loss:12369.922
+[ADSH][70/150][12:49:26] bit:48, dataset:nuswide_21,  train loss:12767.239
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.87it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:09<00:00, 23.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 67.56it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+save in  save/ADSH/nuswide_21_48bits_0.7899236151969694
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7899236151969694 Best MAP: 0.7899236151969694
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][71/150][12:52:22] bit:48, dataset:nuswide_21,  train loss:12332.450
+[ADSH][72/150][12:52:31] bit:48, dataset:nuswide_21,  train loss:12017.847
+[ADSH][73/150][12:52:40] bit:48, dataset:nuswide_21,  train loss:11732.514
+[ADSH][74/150][12:52:49] bit:48, dataset:nuswide_21,  train loss:12064.936
+[ADSH][75/150][12:52:57] bit:48, dataset:nuswide_21,  train loss:12578.286
+[ADSH][76/150][12:53:06] bit:48, dataset:nuswide_21,  train loss:12473.615
+[ADSH][77/150][12:53:15] bit:48, dataset:nuswide_21,  train loss:12300.326
+[ADSH][78/150][12:53:24] bit:48, dataset:nuswide_21,  train loss:13063.602
+[ADSH][79/150][12:53:33] bit:48, dataset:nuswide_21,  train loss:12039.990
+[ADSH][80/150][12:53:41] bit:48, dataset:nuswide_21,  train loss:12165.560
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.45it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:08<00:00, 23.62it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 66.14it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+save in  save/ADSH/nuswide_21_48bits_0.7901925939318895
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7901925939318895 Best MAP: 0.7901925939318895
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][81/150][12:56:38] bit:48, dataset:nuswide_21,  train loss:12454.174
+[ADSH][82/150][12:56:46] bit:48, dataset:nuswide_21,  train loss:12302.480
+[ADSH][83/150][12:56:55] bit:48, dataset:nuswide_21,  train loss:12392.339
+[ADSH][84/150][12:57:04] bit:48, dataset:nuswide_21,  train loss:11797.280
+[ADSH][85/150][12:57:12] bit:48, dataset:nuswide_21,  train loss:12035.686
+[ADSH][86/150][12:57:21] bit:48, dataset:nuswide_21,  train loss:12230.115
+[ADSH][87/150][12:57:30] bit:48, dataset:nuswide_21,  train loss:12512.153
+[ADSH][88/150][12:57:39] bit:48, dataset:nuswide_21,  train loss:12038.806
+[ADSH][89/150][12:57:47] bit:48, dataset:nuswide_21,  train loss:12350.834
+[ADSH][90/150][12:57:56] bit:48, dataset:nuswide_21,  train loss:12088.310
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:10<00:00, 23.27it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 66.48it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+save in  save/ADSH/nuswide_21_48bits_0.7902611224633818
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7902611224633818 Best MAP: 0.7902611224633818
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][91/150][13:00:54] bit:48, dataset:nuswide_21,  train loss:11938.869
+[ADSH][92/150][13:01:03] bit:48, dataset:nuswide_21,  train loss:12030.752
+[ADSH][93/150][13:01:12] bit:48, dataset:nuswide_21,  train loss:12703.025
+[ADSH][94/150][13:01:21] bit:48, dataset:nuswide_21,  train loss:12573.835
+[ADSH][95/150][13:01:29] bit:48, dataset:nuswide_21,  train loss:12575.494
+[ADSH][96/150][13:01:38] bit:48, dataset:nuswide_21,  train loss:12318.380
+[ADSH][97/150][13:01:47] bit:48, dataset:nuswide_21,  train loss:12554.786
+[ADSH][98/150][13:01:56] bit:48, dataset:nuswide_21,  train loss:12273.316
+[ADSH][99/150][13:02:04] bit:48, dataset:nuswide_21,  train loss:12191.315
+[ADSH][100/150][13:02:13] bit:48, dataset:nuswide_21,  train loss:11814.671
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:09<00:00, 23.44it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 67.55it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+save in  save/ADSH/nuswide_21_48bits_0.79534433664538
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.79534433664538 Best MAP: 0.79534433664538
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][101/150][13:05:11] bit:48, dataset:nuswide_21,  train loss:12608.951
+[ADSH][102/150][13:05:19] bit:48, dataset:nuswide_21,  train loss:12001.979
+[ADSH][103/150][13:05:28] bit:48, dataset:nuswide_21,  train loss:12442.123
+[ADSH][104/150][13:05:37] bit:48, dataset:nuswide_21,  train loss:12335.535
+[ADSH][105/150][13:05:46] bit:48, dataset:nuswide_21,  train loss:12284.434
+[ADSH][106/150][13:05:54] bit:48, dataset:nuswide_21,  train loss:12276.762
+[ADSH][107/150][13:06:03] bit:48, dataset:nuswide_21,  train loss:11789.663
+[ADSH][108/150][13:06:12] bit:48, dataset:nuswide_21,  train loss:12620.217
+[ADSH][109/150][13:06:21] bit:48, dataset:nuswide_21,  train loss:12984.711
+[ADSH][110/150][13:06:30] bit:48, dataset:nuswide_21,  train loss:12018.177
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.36it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:09<00:00, 23.42it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 66.57it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7921856287405794 Best MAP: 0.79534433664538
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][111/150][13:09:28] bit:48, dataset:nuswide_21,  train loss:12145.414
+[ADSH][112/150][13:09:37] bit:48, dataset:nuswide_21,  train loss:12579.865
+[ADSH][113/150][13:09:45] bit:48, dataset:nuswide_21,  train loss:12143.914
+[ADSH][114/150][13:09:54] bit:48, dataset:nuswide_21,  train loss:12176.454
+[ADSH][115/150][13:10:03] bit:48, dataset:nuswide_21,  train loss:11950.838
+[ADSH][116/150][13:10:12] bit:48, dataset:nuswide_21,  train loss:12736.444
+[ADSH][117/150][13:10:21] bit:48, dataset:nuswide_21,  train loss:12274.683
+[ADSH][118/150][13:10:30] bit:48, dataset:nuswide_21,  train loss:12072.021
+[ADSH][119/150][13:10:39] bit:48, dataset:nuswide_21,  train loss:12531.603
+[ADSH][120/150][13:10:47] bit:48, dataset:nuswide_21,  train loss:13091.661
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.58it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:10<00:00, 23.25it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:30<00:00, 67.98it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7879090240390851 Best MAP: 0.79534433664538
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][121/150][13:13:44] bit:48, dataset:nuswide_21,  train loss:12207.885
+[ADSH][122/150][13:13:53] bit:48, dataset:nuswide_21,  train loss:12624.466
+[ADSH][123/150][13:14:02] bit:48, dataset:nuswide_21,  train loss:12016.195
+[ADSH][124/150][13:14:11] bit:48, dataset:nuswide_21,  train loss:12599.459
+[ADSH][125/150][13:14:19] bit:48, dataset:nuswide_21,  train loss:12266.231
+[ADSH][126/150][13:14:28] bit:48, dataset:nuswide_21,  train loss:12092.009
+[ADSH][127/150][13:14:37] bit:48, dataset:nuswide_21,  train loss:11749.556
+[ADSH][128/150][13:14:45] bit:48, dataset:nuswide_21,  train loss:12504.132
+[ADSH][129/150][13:14:54] bit:48, dataset:nuswide_21,  train loss:12808.587
+[ADSH][130/150][13:15:03] bit:48, dataset:nuswide_21,  train loss:12530.946
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.55it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:09<00:00, 23.40it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 66.50it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7941591640647119 Best MAP: 0.79534433664538
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][131/150][13:18:00] bit:48, dataset:nuswide_21,  train loss:11758.665
+[ADSH][132/150][13:18:09] bit:48, dataset:nuswide_21,  train loss:12138.266
+[ADSH][133/150][13:18:18] bit:48, dataset:nuswide_21,  train loss:11895.152
+[ADSH][134/150][13:18:27] bit:48, dataset:nuswide_21,  train loss:12580.947
+[ADSH][135/150][13:18:36] bit:48, dataset:nuswide_21,  train loss:12037.586
+[ADSH][136/150][13:18:45] bit:48, dataset:nuswide_21,  train loss:12361.630
+[ADSH][137/150][13:18:53] bit:48, dataset:nuswide_21,  train loss:12321.472
+[ADSH][138/150][13:19:02] bit:48, dataset:nuswide_21,  train loss:12555.524
+[ADSH][139/150][13:19:11] bit:48, dataset:nuswide_21,  train loss:12428.286
+[ADSH][140/150][13:19:20] bit:48, dataset:nuswide_21,  train loss:12321.829
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.13it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:10<00:00, 23.24it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:31<00:00, 66.61it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7914532359793048 Best MAP: 0.79534433664538
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}
+[ADSH][141/150][13:22:18] bit:48, dataset:nuswide_21,  train loss:12047.782
+[ADSH][142/150][13:22:27] bit:48, dataset:nuswide_21,  train loss:12397.714
+[ADSH][143/150][13:22:36] bit:48, dataset:nuswide_21,  train loss:11870.594
+[ADSH][144/150][13:22:45] bit:48, dataset:nuswide_21,  train loss:12409.725
+[ADSH][145/150][13:22:53] bit:48, dataset:nuswide_21,  train loss:12458.063
+[ADSH][146/150][13:23:02] bit:48, dataset:nuswide_21,  train loss:12083.977
+[ADSH][147/150][13:23:11] bit:48, dataset:nuswide_21,  train loss:12437.376
+[ADSH][148/150][13:23:20] bit:48, dataset:nuswide_21,  train loss:12256.847
+[ADSH][149/150][13:23:28] bit:48, dataset:nuswide_21,  train loss:12410.035
+[ADSH][150/150][13:23:37] bit:48, dataset:nuswide_21,  train loss:12286.783
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 11.22it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 3028/3028 [02:09<00:00, 23.46it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [00:30<00:00, 68.22it/s]
+pr curve save to  log/alexnet/ADSH_nuswide_21_48.json
+[ADSH] epoch:3 bit:48 dataset:nuswide_21 MAP:0.7894880777085186 Best MAP: 0.79534433664538
+{'gamma': 0, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'nuswide_21', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [48], 'topK': 5000, 'n_class': 21, 'data_path': '/dataset/NUS-WIDE/', 'data': {'train_set': {'list_path': './data/nuswide_21/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/nuswide_21/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/nuswide_21/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_nuswide_21_48.json'}

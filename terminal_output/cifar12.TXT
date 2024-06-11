@@ -1,0 +1,256 @@
+(nerf) root@autodl-container-049b4b88f8-1c8566ac:~/DeepHash-pytorch-master# python ADSH.py
+Files already downloaded and verified
+train_dataset 5000
+test_dataset 1000
+database_dataset 59000
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 34.61it/s]
+[ADSH][ 1/150][23:19:46] bit:12, dataset:cifar10-1,  train loss:283.205
+[ADSH][ 2/150][23:19:53] bit:12, dataset:cifar10-1,  train loss:224.788
+[ADSH][ 3/150][23:20:00] bit:12, dataset:cifar10-1,  train loss:138.489
+[ADSH][ 4/150][23:20:06] bit:12, dataset:cifar10-1,  train loss:105.220
+[ADSH][ 5/150][23:20:13] bit:12, dataset:cifar10-1,  train loss:90.533
+[ADSH][ 6/150][23:20:20] bit:12, dataset:cifar10-1,  train loss:75.377
+[ADSH][ 7/150][23:20:26] bit:12, dataset:cifar10-1,  train loss:75.431
+[ADSH][ 8/150][23:20:33] bit:12, dataset:cifar10-1,  train loss:73.396
+[ADSH][ 9/150][23:20:40] bit:12, dataset:cifar10-1,  train loss:67.512
+[ADSH][10/150][23:20:46] bit:12, dataset:cifar10-1,  train loss:67.827
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.18it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:27<00:00, 33.93it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 230.60it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.7729052044888475
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.7729052044888475 Best MAP: 0.7729052044888475
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][11/150][23:21:28] bit:12, dataset:cifar10-1,  train loss:65.182
+[ADSH][12/150][23:21:35] bit:12, dataset:cifar10-1,  train loss:64.554
+[ADSH][13/150][23:21:42] bit:12, dataset:cifar10-1,  train loss:61.801
+[ADSH][14/150][23:21:48] bit:12, dataset:cifar10-1,  train loss:61.570
+[ADSH][15/150][23:21:55] bit:12, dataset:cifar10-1,  train loss:60.049
+[ADSH][16/150][23:22:01] bit:12, dataset:cifar10-1,  train loss:58.498
+[ADSH][17/150][23:22:08] bit:12, dataset:cifar10-1,  train loss:57.592
+[ADSH][18/150][23:22:15] bit:12, dataset:cifar10-1,  train loss:56.741
+[ADSH][19/150][23:22:21] bit:12, dataset:cifar10-1,  train loss:56.214
+[ADSH][20/150][23:22:28] bit:12, dataset:cifar10-1,  train loss:53.940
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.88it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 34.48it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 236.14it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.7945630320907459
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.7945630320907459 Best MAP: 0.7945630320907459
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][21/150][23:23:08] bit:12, dataset:cifar10-1,  train loss:59.664
+[ADSH][22/150][23:23:15] bit:12, dataset:cifar10-1,  train loss:58.394
+[ADSH][23/150][23:23:21] bit:12, dataset:cifar10-1,  train loss:52.649
+[ADSH][24/150][23:23:27] bit:12, dataset:cifar10-1,  train loss:51.169
+[ADSH][25/150][23:23:34] bit:12, dataset:cifar10-1,  train loss:56.330
+[ADSH][26/150][23:23:41] bit:12, dataset:cifar10-1,  train loss:55.159
+[ADSH][27/150][23:23:47] bit:12, dataset:cifar10-1,  train loss:50.308
+[ADSH][28/150][23:23:54] bit:12, dataset:cifar10-1,  train loss:52.623
+[ADSH][29/150][23:24:00] bit:12, dataset:cifar10-1,  train loss:53.430
+[ADSH][30/150][23:24:07] bit:12, dataset:cifar10-1,  train loss:51.985
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 14.43it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:27<00:00, 33.73it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 236.55it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.8265683203468691
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8265683203468691 Best MAP: 0.8265683203468691
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][31/150][23:24:47] bit:12, dataset:cifar10-1,  train loss:52.145
+[ADSH][32/150][23:24:54] bit:12, dataset:cifar10-1,  train loss:50.297
+[ADSH][33/150][23:25:00] bit:12, dataset:cifar10-1,  train loss:50.286
+[ADSH][34/150][23:25:07] bit:12, dataset:cifar10-1,  train loss:49.429
+[ADSH][35/150][23:25:13] bit:12, dataset:cifar10-1,  train loss:48.633
+[ADSH][36/150][23:25:20] bit:12, dataset:cifar10-1,  train loss:52.470
+[ADSH][37/150][23:25:26] bit:12, dataset:cifar10-1,  train loss:52.537
+[ADSH][38/150][23:25:33] bit:12, dataset:cifar10-1,  train loss:50.123
+[ADSH][39/150][23:25:39] bit:12, dataset:cifar10-1,  train loss:48.133
+[ADSH][40/150][23:25:46] bit:12, dataset:cifar10-1,  train loss:46.556
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.00it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:30<00:00, 30.23it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 235.52it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.8583973260663275
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8583973260663275 Best MAP: 0.8583973260663275
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][41/150][23:26:30] bit:12, dataset:cifar10-1,  train loss:47.018
+[ADSH][42/150][23:26:36] bit:12, dataset:cifar10-1,  train loss:46.807
+[ADSH][43/150][23:26:42] bit:12, dataset:cifar10-1,  train loss:47.845
+[ADSH][44/150][23:26:49] bit:12, dataset:cifar10-1,  train loss:44.437
+[ADSH][45/150][23:26:55] bit:12, dataset:cifar10-1,  train loss:45.909
+[ADSH][46/150][23:27:02] bit:12, dataset:cifar10-1,  train loss:46.424
+[ADSH][47/150][23:27:08] bit:12, dataset:cifar10-1,  train loss:45.911
+[ADSH][48/150][23:27:15] bit:12, dataset:cifar10-1,  train loss:47.150
+[ADSH][49/150][23:27:21] bit:12, dataset:cifar10-1,  train loss:47.212
+[ADSH][50/150][23:27:28] bit:12, dataset:cifar10-1,  train loss:43.511
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 14.57it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:27<00:00, 34.08it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 249.36it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8569987233225359 Best MAP: 0.8583973260663275
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][51/150][23:28:07] bit:12, dataset:cifar10-1,  train loss:43.225
+[ADSH][52/150][23:28:14] bit:12, dataset:cifar10-1,  train loss:45.205
+[ADSH][53/150][23:28:20] bit:12, dataset:cifar10-1,  train loss:45.056
+[ADSH][54/150][23:28:27] bit:12, dataset:cifar10-1,  train loss:47.567
+[ADSH][55/150][23:28:33] bit:12, dataset:cifar10-1,  train loss:44.073
+[ADSH][56/150][23:28:40] bit:12, dataset:cifar10-1,  train loss:43.264
+[ADSH][57/150][23:28:46] bit:12, dataset:cifar10-1,  train loss:41.475
+[ADSH][58/150][23:28:52] bit:12, dataset:cifar10-1,  train loss:44.013
+[ADSH][59/150][23:28:59] bit:12, dataset:cifar10-1,  train loss:44.303
+[ADSH][60/150][23:29:05] bit:12, dataset:cifar10-1,  train loss:45.132
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.75it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 34.52it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 246.19it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.8649405459491926
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8649405459491926 Best MAP: 0.8649405459491926
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][61/150][23:29:44] bit:12, dataset:cifar10-1,  train loss:42.890
+[ADSH][62/150][23:29:51] bit:12, dataset:cifar10-1,  train loss:44.175
+[ADSH][63/150][23:29:57] bit:12, dataset:cifar10-1,  train loss:45.059
+[ADSH][64/150][23:30:04] bit:12, dataset:cifar10-1,  train loss:45.662
+[ADSH][65/150][23:30:10] bit:12, dataset:cifar10-1,  train loss:43.055
+[ADSH][66/150][23:30:16] bit:12, dataset:cifar10-1,  train loss:43.924
+[ADSH][67/150][23:30:23] bit:12, dataset:cifar10-1,  train loss:46.269
+[ADSH][68/150][23:30:29] bit:12, dataset:cifar10-1,  train loss:42.327
+[ADSH][69/150][23:30:35] bit:12, dataset:cifar10-1,  train loss:43.236
+[ADSH][70/150][23:30:42] bit:12, dataset:cifar10-1,  train loss:43.902
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.39it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 34.76it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 245.24it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.8836764896866993
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8836764896866993 Best MAP: 0.8836764896866993
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][71/150][23:31:21] bit:12, dataset:cifar10-1,  train loss:41.123
+[ADSH][72/150][23:31:27] bit:12, dataset:cifar10-1,  train loss:42.539
+[ADSH][73/150][23:31:34] bit:12, dataset:cifar10-1,  train loss:43.399
+[ADSH][74/150][23:31:40] bit:12, dataset:cifar10-1,  train loss:43.471
+[ADSH][75/150][23:31:46] bit:12, dataset:cifar10-1,  train loss:41.545
+[ADSH][76/150][23:31:53] bit:12, dataset:cifar10-1,  train loss:43.011
+[ADSH][77/150][23:31:59] bit:12, dataset:cifar10-1,  train loss:42.546
+[ADSH][78/150][23:32:06] bit:12, dataset:cifar10-1,  train loss:41.574
+[ADSH][79/150][23:32:12] bit:12, dataset:cifar10-1,  train loss:40.489
+[ADSH][80/150][23:32:18] bit:12, dataset:cifar10-1,  train loss:42.359
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 14.97it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 34.95it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 243.93it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8596944899288326 Best MAP: 0.8836764896866993
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][81/150][23:32:57] bit:12, dataset:cifar10-1,  train loss:39.059
+[ADSH][82/150][23:33:03] bit:12, dataset:cifar10-1,  train loss:45.320
+[ADSH][83/150][23:33:10] bit:12, dataset:cifar10-1,  train loss:42.221
+[ADSH][84/150][23:33:16] bit:12, dataset:cifar10-1,  train loss:40.273
+[ADSH][85/150][23:33:23] bit:12, dataset:cifar10-1,  train loss:40.213
+[ADSH][86/150][23:33:29] bit:12, dataset:cifar10-1,  train loss:39.754
+[ADSH][87/150][23:33:35] bit:12, dataset:cifar10-1,  train loss:39.706
+[ADSH][88/150][23:33:42] bit:12, dataset:cifar10-1,  train loss:39.794
+[ADSH][89/150][23:33:48] bit:12, dataset:cifar10-1,  train loss:39.449
+[ADSH][90/150][23:33:55] bit:12, dataset:cifar10-1,  train loss:41.817
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 14.19it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 35.35it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 249.09it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8750577142408883 Best MAP: 0.8836764896866993
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][91/150][23:34:33] bit:12, dataset:cifar10-1,  train loss:42.277
+[ADSH][92/150][23:34:39] bit:12, dataset:cifar10-1,  train loss:42.573
+[ADSH][93/150][23:34:45] bit:12, dataset:cifar10-1,  train loss:38.876
+[ADSH][94/150][23:34:52] bit:12, dataset:cifar10-1,  train loss:37.957
+[ADSH][95/150][23:34:58] bit:12, dataset:cifar10-1,  train loss:40.867
+[ADSH][96/150][23:35:04] bit:12, dataset:cifar10-1,  train loss:39.128
+[ADSH][97/150][23:35:11] bit:12, dataset:cifar10-1,  train loss:37.355
+[ADSH][98/150][23:35:17] bit:12, dataset:cifar10-1,  train loss:39.221
+[ADSH][99/150][23:35:23] bit:12, dataset:cifar10-1,  train loss:38.946
+[ADSH][100/150][23:35:30] bit:12, dataset:cifar10-1,  train loss:40.213
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.07it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:25<00:00, 35.86it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 247.70it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.8907477697371401
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8907477697371401 Best MAP: 0.8907477697371401
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][101/150][23:36:08] bit:12, dataset:cifar10-1,  train loss:39.717
+[ADSH][102/150][23:36:14] bit:12, dataset:cifar10-1,  train loss:37.816
+[ADSH][103/150][23:36:20] bit:12, dataset:cifar10-1,  train loss:37.500
+[ADSH][104/150][23:36:27] bit:12, dataset:cifar10-1,  train loss:38.725
+[ADSH][105/150][23:36:33] bit:12, dataset:cifar10-1,  train loss:38.889
+[ADSH][106/150][23:36:39] bit:12, dataset:cifar10-1,  train loss:39.525
+[ADSH][107/150][23:36:46] bit:12, dataset:cifar10-1,  train loss:38.179
+[ADSH][108/150][23:36:52] bit:12, dataset:cifar10-1,  train loss:39.578
+[ADSH][109/150][23:36:58] bit:12, dataset:cifar10-1,  train loss:39.891
+[ADSH][110/150][23:37:04] bit:12, dataset:cifar10-1,  train loss:39.552
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.68it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:25<00:00, 35.82it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:03<00:00, 252.55it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8896633284966918 Best MAP: 0.8907477697371401
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][111/150][23:37:42] bit:12, dataset:cifar10-1,  train loss:39.426
+[ADSH][112/150][23:37:49] bit:12, dataset:cifar10-1,  train loss:40.703
+[ADSH][113/150][23:37:55] bit:12, dataset:cifar10-1,  train loss:37.125
+[ADSH][114/150][23:38:01] bit:12, dataset:cifar10-1,  train loss:36.872
+[ADSH][115/150][23:38:08] bit:12, dataset:cifar10-1,  train loss:38.310
+[ADSH][116/150][23:38:14] bit:12, dataset:cifar10-1,  train loss:38.937
+[ADSH][117/150][23:38:20] bit:12, dataset:cifar10-1,  train loss:37.333
+[ADSH][118/150][23:38:27] bit:12, dataset:cifar10-1,  train loss:37.538
+[ADSH][119/150][23:38:33] bit:12, dataset:cifar10-1,  train loss:36.184
+[ADSH][120/150][23:38:39] bit:12, dataset:cifar10-1,  train loss:38.889
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.38it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 35.42it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 243.06it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8840559701868621 Best MAP: 0.8907477697371401
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][121/150][23:39:18] bit:12, dataset:cifar10-1,  train loss:38.261
+[ADSH][122/150][23:39:24] bit:12, dataset:cifar10-1,  train loss:37.761
+[ADSH][123/150][23:39:31] bit:12, dataset:cifar10-1,  train loss:37.960
+[ADSH][124/150][23:39:37] bit:12, dataset:cifar10-1,  train loss:36.639
+[ADSH][125/150][23:39:44] bit:12, dataset:cifar10-1,  train loss:36.058
+[ADSH][126/150][23:39:50] bit:12, dataset:cifar10-1,  train loss:35.967
+[ADSH][127/150][23:39:56] bit:12, dataset:cifar10-1,  train loss:39.994
+[ADSH][128/150][23:40:02] bit:12, dataset:cifar10-1,  train loss:37.588
+[ADSH][129/150][23:40:09] bit:12, dataset:cifar10-1,  train loss:36.465
+[ADSH][130/150][23:40:15] bit:12, dataset:cifar10-1,  train loss:36.903
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 14.04it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:25<00:00, 35.78it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:04<00:00, 245.32it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.8937026586153083
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.8937026586153083 Best MAP: 0.8937026586153083
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][131/150][23:40:54] bit:12, dataset:cifar10-1,  train loss:37.505
+[ADSH][132/150][23:41:00] bit:12, dataset:cifar10-1,  train loss:35.849
+[ADSH][133/150][23:41:06] bit:12, dataset:cifar10-1,  train loss:37.773
+[ADSH][134/150][23:41:13] bit:12, dataset:cifar10-1,  train loss:37.039
+[ADSH][135/150][23:41:20] bit:12, dataset:cifar10-1,  train loss:37.006
+[ADSH][136/150][23:41:26] bit:12, dataset:cifar10-1,  train loss:36.700
+[ADSH][137/150][23:41:32] bit:12, dataset:cifar10-1,  train loss:35.332
+[ADSH][138/150][23:41:39] bit:12, dataset:cifar10-1,  train loss:35.594
+[ADSH][139/150][23:41:45] bit:12, dataset:cifar10-1,  train loss:37.721
+[ADSH][140/150][23:41:51] bit:12, dataset:cifar10-1,  train loss:34.684
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 14.84it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 34.77it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:03<00:00, 254.42it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.9027915897697063
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.9027915897697063 Best MAP: 0.9027915897697063
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
+[ADSH][141/150][23:42:30] bit:12, dataset:cifar10-1,  train loss:35.577
+[ADSH][142/150][23:42:37] bit:12, dataset:cifar10-1,  train loss:37.588
+[ADSH][143/150][23:42:43] bit:12, dataset:cifar10-1,  train loss:38.983
+[ADSH][144/150][23:42:49] bit:12, dataset:cifar10-1,  train loss:36.237
+[ADSH][145/150][23:42:55] bit:12, dataset:cifar10-1,  train loss:34.967
+[ADSH][146/150][23:43:02] bit:12, dataset:cifar10-1,  train loss:35.918
+[ADSH][147/150][23:43:08] bit:12, dataset:cifar10-1,  train loss:36.453
+[ADSH][148/150][23:43:14] bit:12, dataset:cifar10-1,  train loss:35.591
+[ADSH][149/150][23:43:20] bit:12, dataset:cifar10-1,  train loss:39.024
+[ADSH][150/150][23:43:27] bit:12, dataset:cifar10-1,  train loss:38.395
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 15.42it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 922/922 [00:26<00:00, 34.67it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:03<00:00, 251.11it/s]
+pr curve save to  log/alexnet/ADSH_cifar10-1_12.json
+save in  save/ADSH/cifar10-1_12bits_0.9032053341025252
+[ADSH] epoch:3 bit:12 dataset:cifar10-1 MAP:0.9032053341025252 Best MAP: 0.9032053341025252
+{'gamma': 200, 'num_samples': 2000, 'max_iter': 150, 'epoch': 3, 'test_map': 10, 'optimizer': {'type': <class 'torch.optim.adam.Adam'>, 'optim_params': {'lr': 0.0001, 'weight_decay': 1e-05}}, 'info': '[ADSH]', 'resize_size': 256, 'crop_size': 224, 'batch_size': 64, 'net': <class 'network.AlexNet'>, 'dataset': 'cifar10-1', 'save_path': 'save/ADSH', 'device': device(type='cuda', index=0), 'bit_list': [12, 24, 32], 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10-1/', 'data': {'train_set': {'list_path': './data/cifar10-1/train.txt', 'batch_size': 64}, 'database': {'list_path': './data/cifar10-1/database.txt', 'batch_size': 64}, 'test': {'list_path': './data/cifar10-1/test.txt', 'batch_size': 64}}, 'pr_curve_path': 'log/alexnet/ADSH_cifar10-1_12.json'}
