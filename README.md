@@ -125,4 +125,3 @@ def get_config():
 - [DeepHash-pytorch](https://github.com/swuxyj/DeepHash-pytorch)
 ---
 
-请根据需要进一步自定义README。
