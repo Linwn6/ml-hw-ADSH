@@ -105,7 +105,7 @@ def get_config():
     ```
 ## 模型下载
 
-可直接在releases的save_models下载已训练好的模型解压使用。
+可直接在releases的[save_models](https://github.com/Linwn6/ml-hw-ADSH/releases/tag/v1.0.0)下载已训练好的模型解压使用。
 
 ## 引用
 
@@ -129,3 +129,4 @@ def get_config():
 - [ADSH_PyTorch](https://github.com/TreezzZ/ADSH_PyTorch)
 - [DeepHash-pytorch](https://github.com/swuxyj/DeepHash-pytorch)
 ---
+
