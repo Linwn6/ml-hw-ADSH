@@ -12,8 +12,10 @@
 - [运行代码](#运行代码)
 - [参数设置](#参数设置)
 - [精确召回曲线](#精确召回曲线)
+- [模型下载](#模型下载)
 - [引用](#引用)
 - [致谢](#致谢)
+  
 
 ## 安装
 
@@ -101,6 +103,9 @@ def get_config():
     cd utils
     python precision_recall_curve.py
     ```
+## 模型下载
+
+可直接在releases的save_models下载已训练好的模型解压使用。
 
 ## 引用
 
@@ -124,4 +129,3 @@ def get_config():
 - [ADSH_PyTorch](https://github.com/TreezzZ/ADSH_PyTorch)
 - [DeepHash-pytorch](https://github.com/swuxyj/DeepHash-pytorch)
 ---
-
